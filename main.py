@@ -1,6 +1,7 @@
 import requests
 from pprint import pprint
 
+
 class YaUploader:
     def __init__(self, token: str):
         self.token = token
@@ -26,4 +27,4 @@ if __name__ == '__main__':
     file = 'OMG.txt'
     token = ''
     uploader = YaUploader(token)
-    result = uploader.upload(path_to_file, file)
+    uploader.upload(path_to_file, file)
